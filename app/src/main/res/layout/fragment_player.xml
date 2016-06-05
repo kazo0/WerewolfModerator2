@@ -8,8 +8,10 @@
 	<ImageButton android:id="@+id/player_role_image_button"
 		android:layout_width="150dp"
 		android:layout_height="150dp"
+		android:layout_marginTop="24dp"
 		android:scaleType="centerInside"
-		android:src="@drawable/download"
+		android:background="@android:color/transparent"
+		tools:src="@drawable/villager"
 		android:layout_gravity="center"/>
 	<TextView android:id="@+id/role_title"
 		android:layout_width="wrap_content"
@@ -28,10 +30,49 @@
 		android:text="@string/special_attributes_label"
 		style="?android:listSeparatorTextViewStyle"/>
 
-	<android.support.v7.widget.RecyclerView
-		android:id="@+id/player_attribute_list"
+	<LinearLayout android:id="@+id/player_love_attribute"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
-
-	</android.support.v7.widget.RecyclerView>
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:orientation="horizontal">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/ic_love"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			tools:text="In love with --blank--"/>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/player_totem_attribute"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:orientation="horizontal">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/ic_totem"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			tools:text="Totem for --blank--"/>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/player_witch_attribute"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:orientation="horizontal">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/ic_potion"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			tools:text="Totem for --blank--"/>
+	</LinearLayout>
 </LinearLayout>

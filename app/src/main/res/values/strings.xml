@@ -6,7 +6,16 @@
 
 	<string name="action_settings">Settings</string>
 
-	<!-- TODO: Remove or change this placeholder text -->
-	<string name="hello_blank_fragment">Hello blank fragment</string>
 	<string name="special_attributes_label">Special Attributes</string>
+	<string name="in_love_with">(In love with %1$s)</string>
+	<string name="totem_for">(Totem for %1$s)</string>
+	<string name="menu_filter_dead">Filter Dead Players</string>
+	<string name="love_checkbox_text">In Love</string>
+	<string name="totem_checkbox_text">Totem for</string>
+	<string name="life_potion_checkbox_text">Has life potion</string>
+	<string name="poison_potion_checkbox_text">Has poison potion</string>
+
+		<string name="no_potions">Has no potions</string>
+		<string name="one_potion">Has a %1$s potion</string>
+		<string name="both_potions">Has both potions</string>
 </resources>
