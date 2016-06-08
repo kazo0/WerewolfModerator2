@@ -12,6 +12,24 @@ public class RoleFactory {
                 return new Witch();
             case "Cupid":
                 return new Cupid();
+            case "Accursed Wolf Father":
+                return new AccursedWolfFather();
+            case "Big Bad Wolf":
+                return new BigBadWolf();
+            case "Elder":
+                return new Elder();
+            case "Hunter":
+                return new Hunter();
+            case "Seer":
+                return new Seer();
+            case "Knight":
+                return new Knight();
+            case "Thief":
+                return new Thief();
+            case "Werewolf":
+                return new Werewolf();
+            case "Wolf Hound":
+                return new WolfHound();
             default:
                 return new Villager();
         }

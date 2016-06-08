@@ -30,6 +30,8 @@ public class GameSession {
         mPlayers.remove(player);
     }
 
+    public List<Player> getPlayers() { return mPlayers; }
+
     public Player getPlayer(UUID playerId) {
         for (Player p : mPlayers) {
             if (p.getId() == playerId) {
@@ -49,5 +51,16 @@ public class GameSession {
         for (Player p : mPlayers) {
             p.reset();
         }
+    }
+
+    public int getDeathCount() {
+        int dead = 0;
+        for (Player p : mPlayers) {
+            if (p.isDead()) {
+                dead += 1;
+            }
+        }
+
+        return dead;
     }
 }

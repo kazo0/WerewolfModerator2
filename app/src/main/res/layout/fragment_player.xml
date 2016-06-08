@@ -73,6 +73,36 @@
 		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="match_parent"
-			tools:text="Totem for --blank--"/>
+			tools:text="Has both potions"/>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/player_accursed_wolf_attribute"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:orientation="horizontal">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/ic_infect"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			tools:text="Can infect victim and turn them into a werewolf"/>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/player_big_bad_wolf_attribute"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:orientation="horizontal">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/ic_bigbadwolf"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			tools:text="Can bite a second victim"/>
 	</LinearLayout>
 </LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<ImageView android:id="@+id/list_item_player_logo"
+		android:layout_width="34dp"
+		android:layout_height="34dp"
+		android:layout_margin="4dp"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		tools:src="@drawable/villager"/>
+	<TextView android:id="@+id/list_item_player_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		tools:text="Steve"
+		android:textSize="20sp"
+		android:layout_toRightOf="@id/list_item_player_logo"
+		android:textStyle="bold"
+		android:padding="4dp"/>
+	<TextView android:id="@+id/list_item_player_role"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/list_item_player_name"
+		android:layout_toRightOf="@id/list_item_player_logo"
+		tools:text="Villager"
+		android:padding="4dp"/>
+	<ImageView android:id="@+id/list_item_player_totem"
+		android:layout_width="34dp"
+		android:layout_height="34dp"
+		android:layout_margin="4dp"
+		tools:src="@drawable/ic_totem"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"/>
+	<ImageView android:id="@+id/list_item_player_love"
+		android:layout_width="34dp"
+		android:layout_height="34dp"
+		android:layout_margin="4dp"
+		tools:src="@drawable/ic_love"
+		android:layout_toLeftOf="@id/list_item_player_totem"
+		android:layout_centerVertical="true"/>
+
+</RelativeLayout>

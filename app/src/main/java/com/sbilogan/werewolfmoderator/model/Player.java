@@ -15,27 +15,31 @@ public class Player {
     private boolean mIsDead;
     private Player mLovePartner;
     private Player mTotemFor;
-    private List<Role> mRoles;
+    private Role mRole;
 
-    public Player(String name, List<Role> roles) {
-        this(name, false, null, null, roles);
+    public Player() {
+        mId = UUID.randomUUID();
     }
 
-    public Player(String name, boolean isDead, Player lovePartner, Player totemFor, List<Role> roles) {
+    public Player(String name, Role role) {
+        this(name, false, null, null, role);
+    }
+
+    public Player(String name, boolean isDead, Player lovePartner, Player totemFor, Role role) {
         mId = UUID.randomUUID();
 
         mName = name;
         mIsDead = isDead;
         mLovePartner = lovePartner;
         mTotemFor = totemFor;
-        mRoles = roles;
+        mRole = role;
     }
 
     public void reset() {
         mIsDead = false;
         mLovePartner = null;
         mTotemFor = null;
-        mRoles.clear();
+        mRole = null;
     }
 
     public UUID getId() {
@@ -78,12 +82,12 @@ public class Player {
         mTotemFor = totemFor;
     }
 
-    public List<Role> getRoles() {
-        return mRoles;
+    public Role getRole() {
+        return mRole;
     }
 
-    public void setRoles(List<Role> roles) {
-        mRoles = roles;
+    public void setRole(Role role) {
+        mRole = role;
     }
 
     public void kill() {

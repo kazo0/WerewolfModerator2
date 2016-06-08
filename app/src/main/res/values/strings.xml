@@ -6,14 +6,17 @@
 
 	<string name="action_settings">Settings</string>
 
+	<string name="player_list_subtitle">%1$s Alive / %2$s Dead</string>
 	<string name="special_attributes_label">Special Attributes</string>
 	<string name="in_love_with">(In love with %1$s)</string>
 	<string name="totem_for">(Totem for %1$s)</string>
+	<string name="can_infect">(Can infect a victim to become a werewolf)</string>
 	<string name="menu_filter_dead">Filter Dead Players</string>
 	<string name="love_checkbox_text">In Love</string>
 	<string name="totem_checkbox_text">Totem for</string>
 	<string name="life_potion_checkbox_text">Has life potion</string>
 	<string name="poison_potion_checkbox_text">Has poison potion</string>
+	<string name="infect_checkbox_text">Can infect victim</string>
 
 		<string name="no_potions">Has no potions</string>
 		<string name="one_potion">Has a %1$s potion</string>
